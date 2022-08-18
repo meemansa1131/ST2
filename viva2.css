@@ -1,0 +1,107 @@
+body{
+	 background-image: linear-gradient(to bottom, #83C7D3 , white);
+}
+.navbar{
+    position: fixed;
+    width: 97%;
+    z-index: 999;
+    padding: 0;
+    font-family: 'Ubuntu', arial;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: #686666;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+	margin-left: 25px;
+	font-size:30px;
+	color: black;
+	text-decoration: none;
+	font-weight:bold;
+}
+.navbar .logo span{
+	font-size:30px;
+	margin-right: 20px;
+    color: white}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+	 margin-left: 25px; 
+	 text-decoration: none;
+	
+	
+}
+.navbar .menu li a{
+	
+    display: block;
+    color: black;
+    font-size: 24px;
+   
+    margin-left: 10px;
+	text-decoration: none;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: red;
+}
+.navbar.sticky .menu li a:hover{
+    color: red;
+}
+* {box-sizing:border-box}
+
+/* slider*/
+      .slider {
+		
+        width: 400px;
+        height: 200px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+		  
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: center;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
